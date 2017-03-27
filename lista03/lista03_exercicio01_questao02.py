@@ -7,13 +7,12 @@
 # nome completo do aluno 3	matrícula do aluno 3
 # nome completo do aluno 4	matrícula do aluno 4
 #
-# Faça um Programa que peça dois números e imprima o maior deles.
+# Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo.
 # ----------------------------------------------------------
-n1 = input('numero 1 ')
-n2 = input('numero 2 ')
-if (n1 == n2):
-    print(n1, 'eh igual que ', n2)
-elif (n1 > n2):
-    print(n1, 'eh maior que ', n1)
+n1 =int(input('Digite o numero '))
+if (n1==0):
+    print('O valor eh igual a zero')
+elif (n1 > 0):
+    print(n1, 'eh positivo')
 else:
-    print(n2, 'eh maior que ', n1)
+    print(n1, ' eh negativo')
