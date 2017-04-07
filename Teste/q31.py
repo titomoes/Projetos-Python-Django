@@ -14,7 +14,7 @@ while True:
     # calculo do Total e troco
     print('Total: ', total)
     din = float(input('Dinheiro :'))
-    #Condição do dinheiro for menor que o total
+    # Condição do dinheiro for menor que o total
     if din >= total:
         troco = din - total
         print('Troco: ', troco)
