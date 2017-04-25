@@ -15,10 +15,10 @@
   	$arrlength = count($teste);
   	for ($i=0,$i < $arrlength; $i++)
   	{
-    	for ($x=0; $x < arrlength ; $x++) 
+    	for ($x=0; $x < $arrlength ; $x++) 
     	{ 
 			echo $teste[0][0];
-			echo "oi";	       	
+			echo "<br>";	       	
        	}	
     }
 ?>
