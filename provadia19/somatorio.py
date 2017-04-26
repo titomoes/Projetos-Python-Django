@@ -1,4 +1,4 @@
-numb = input()
+numb = int(input())
 acm = 0
 cont = 0
 while cont != numb:
