@@ -31,13 +31,12 @@ media = 0
 j=0
 while True:
     list_nome.append(str(input('Atleta: \b')))
-    if (list_nome[j] == ""):
-        break
-    else:
+    if (list_nome[j] != ""):
         for i in range(5):
             list_saltos.append(float(input(str(i + 1) + ' Salto: \b')))
             media += list_saltos[i]
         media = media / 5
+    else:
         print('Resultado Final:')
         for i in range(len(list_nome)):
             print('Atleta: ' + list_nome[i])
