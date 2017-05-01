@@ -13,7 +13,7 @@
 list_media = []
 list_notas = []
 cont = 0
-for i in range(3):
+for i in range(10):
     media = 0
     list_notas = []
     print('Aluno: ', i + 1)
