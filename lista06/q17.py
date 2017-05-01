@@ -42,5 +42,4 @@ while True:
             print('Atleta: ' + list_nome[i])
             print('Saltos: ' + str(list_saltos[i]) + ' - ' + str(list_saltos[i + 1]) + ' - ' + str(list_saltos[i + 2]) + ' - ' + str(list_saltos[i + 3]))
             print('Média dos Saltos: ' + str(media) + ' m')
-            break
     j+=1
