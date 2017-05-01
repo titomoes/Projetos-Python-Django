@@ -1,3 +1,4 @@
+
 # ----------------------------------------------------------
 # Introdução a Programação de Computadores - IPC
 # Universidade do Estado do Amazonas - UEA
