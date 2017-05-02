@@ -28,19 +28,24 @@
 # Média dos saltos: 5.9 m
 list_saltos = []
 list_nome = []
-media = 0
+list_media =[]
 j = 0
 while True:
     # inputa na lista nome[]
     list_nome.append(str(input('Atleta: \b')))
+
     if (list_nome[j] != ""):
         # inputa na lista saltos a quantidade de saltos
+        media = 0
         for i in range(5):
             list_saltos.append(float(input(str(i + 1) + ' Salto: \b')))
+            #list_saltos.append(float(input('Salto: ')))
             # acumula os saltos
             media += list_saltos[i]
             # tira media dos saltos
         media = media / 5
+        list_media.append(media)
+        print(list_saltos, list_media)
     else:
         #
         print('Resultado Final:')
@@ -48,6 +53,6 @@ while True:
             print('Atleta: ' + list_nome[i])
             print('Saltos: ' + str(list_saltos[i]) + ' - ' + str(list_saltos[i + 1]) + ' - ' + str(
                 list_saltos[i + 2]) + ' - ' + str(list_saltos[i + 3]) + ' - ' + str(list_saltos[i + 4]))
-            print('Média dos Saltos: ' + str(media) + ' m')
+            print('Média dos Saltos: ' + str(list_media[i]) + ' m')
         break
     j += 1
