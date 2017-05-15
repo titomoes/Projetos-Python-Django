@@ -3,10 +3,12 @@
 # elementos da diagonal principal.
 
 matriz = []
+linhas = 10
+colunas = 10
 # gerando matriz
-for i in range (3):
+for i in range (linhas):
     lista=[]
-    for j in range(3):
+    for j in range(colunas):
         lista.append(input())
     matriz.append(lista)
 
