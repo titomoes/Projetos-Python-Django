@@ -14,3 +14,4 @@ for i,n in enumerate(matriz):
     for j,m in enumerate(n):
         if i==j:
             print(m, end=' ')
+
