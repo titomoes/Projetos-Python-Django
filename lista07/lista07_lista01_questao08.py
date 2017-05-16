@@ -10,9 +10,10 @@ variavel = linhas + 1
 for i in range (linhas):
     lista=[]
     for j in range(colunas):
-        lista.append(input())
+        valor = int(input("Digite um valor"))
+        lista.append(valor)
     matriz.append(lista)
-
+print(matriz)
 for i,n in enumerate(matriz):
     for j,m in enumerate(n):
         # ajuste do índice da matriz, que começa em 1 e não em 0
