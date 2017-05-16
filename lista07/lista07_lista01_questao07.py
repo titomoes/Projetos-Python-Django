@@ -2,8 +2,8 @@
 # elementos da diagonal secundária.
 
 matriz = []
-linhas = 4
-colunas = 4
+linhas = 10
+colunas = 10
 variavel = linhas + 1
 
 # gerando matriz

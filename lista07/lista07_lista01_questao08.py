@@ -2,8 +2,8 @@
 # todos os elementos exceto os elementos da diagonal secundária.
 
 matriz = []
-linhas = 4
-colunas = 4
+linhas = 10
+colunas = 10
 variavel = linhas + 1
 
 # gerando matriz
@@ -16,5 +16,5 @@ for i in range (linhas):
 for i,n in enumerate(matriz):
     for j,m in enumerate(n):
         # ajuste do índice da matriz, que começa em 1 e não em 0
-        if j+i+2 == variavel:
+        if j+i+2 != variavel:
             print(m,end=' ')
