@@ -17,5 +17,4 @@ for i in range (linhas):
     matriz_A.append(lista_A)
     matriz_B.append(lista_B)
 
-print(matriz_A)
 print(matriz_B)
