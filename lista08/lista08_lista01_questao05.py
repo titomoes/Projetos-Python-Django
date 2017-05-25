@@ -4,14 +4,11 @@
 # que é o custo de um item antes do imposto.
 # A função “altera” o valor de custo para incluir o imposto sobre vendas.
 
-def soma_imposto(taxaImposto, custo):
-    res = (taxaImposto * custo) / 100 + custo
-    return res
-
+from lista08.ipc import funcoes
 
 taxa = float(input("Digite o valor da taxa de imposto"))
 preco = float(input("Digite o valor do preço"))
 
-total = soma_imposto(taxa, preco)
+total = funcoes.soma_imposto(taxa, preco)
 
 print(total)

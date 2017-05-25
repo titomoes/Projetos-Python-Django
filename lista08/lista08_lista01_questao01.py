@@ -5,16 +5,10 @@
 #    .....
 #    n   n   n   n   n   n  ... n
 
-def imprimir(n):
-    res = ""
-    c = 1
-    for i in range(n):
-        res += c * (str(i + 1) + " ") + "\n"
-        c += 1
-    return res
+from lista08.ipc import funcoes
 
 qtd = int(input("Informe a quantidade: "))
 
-resposta  = imprimir(qtd)
+resposta  = funcoes.imprimir_questao1(qtd)
 
 print(resposta)
