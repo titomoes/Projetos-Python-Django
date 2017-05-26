@@ -1,14 +1,13 @@
-
 import random
 
-# lista 1 questão 2
-def imprimir_questao1(n):
-    res = ""
-    c = 1
-    for i in range(n):
-        res += c * (str(i + 1) + " ") + "\n"
-        c += 1
-    return res
+    # lista 1 questão 1
+    def imprimir_questao1(n):
+        res = ""
+        c = 1
+        for i in range(n):
+            res += c * (str(i + 1) + " ") + "\n"
+            c += 1
+        return res
 
 
 # lista 1 questão 2
