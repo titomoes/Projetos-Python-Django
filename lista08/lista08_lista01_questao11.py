@@ -12,7 +12,12 @@
 
 
 from lista08.ipc import funcoes
+import random
 
-data = input("Informe data no formato DD/MM/AAAA: ")
-
-print(funcoes.data_mes_extenso(data))
+def embaralha(nome):
+    a=list(range(0,len(nome)-1))
+    random.shuffle(a)
+    for i in range(len(a)):
+        print(nome[i])
+nome=input()
+embaralha(nome)
