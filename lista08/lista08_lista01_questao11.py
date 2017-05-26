@@ -1,23 +1,11 @@
-# Embaralha palavra. Construa uma função que receba uma string como parâmetro
+# Data com mês por extenso. Construa uma função que receba uma data no formato DD/MM/AAAA
 #
-# e devolva outra string com os carateres embaralhados.
+# e devolva uma string no formato D de mesPorExtenso de AAAA. Opcionalmente,
 #
-# Por exemplo: se função receber a palavra python, pode
-#
-# retornar npthyo, ophtyn ou qualquer outra combinação possível, de forma aleatória.
-#
-# Padronize em sua função que todos os caracteres serão devolvidos em caixa alta ou caixa baixa,
-#
-# independentemente de como foram digitados.
-
+# valide a data e retorne NULL caso a data seja inválida.
 
 from lista08.ipc import funcoes
-import random
 
-def embaralha(nome):
-    a=list(range(0,len(nome)-1))
-    random.shuffle(a)
-    for i in range(len(a)):
-        print(nome[i])
-nome=input()
-embaralha(nome)
+data = input("Informe data no formato DD/MM/AAAA: ")
+
+print(funcoes.data_mes_extenso(data))

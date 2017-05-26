@@ -158,3 +158,13 @@ def data_mes_extenso(data):
 
     return mes_extenso
 
+# lista 1 questao11
+def embaralha(nome):
+    palavra=""
+    nome.lower()
+    a=list(range(0,len(nome)))
+    while a[0]==0:
+        random.shuffle(a)
+    for i in a:
+        palavra+=nome[i]
+    return palavra
