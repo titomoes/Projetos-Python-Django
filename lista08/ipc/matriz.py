@@ -135,6 +135,24 @@ def media_diagonal_principal(matriz):
                 c += 1
     return soma / c
 
+# função que soma as diagonais
+
+def soma_diagonais(matriz):
+    vetor = []
+    soma = 0
+    c = 0
+    ordem = len(matriz)
+    j = ordem - 1
+
+    for i, n in enumerate(matriz):
+        for j, m in enumerate(n):
+            if i == j:
+                soma += matriz[i][j]
+    for i in range(ordem):
+        soma += matriz[i][j]
+        j -= 1
+
+    return soma
 
 # função que retorna a média dos elementos da diagonal secundária
 
@@ -149,6 +167,7 @@ def media_diagonal_secundaria(matriz):
         c += 1
     return soma / c
 
+
 # funcao que retorna a soma dos elementos
 
 def soma_elementos_matriz(matriz):
@@ -157,3 +176,15 @@ def soma_elementos_matriz(matriz):
         for j in i:
             acumulador += j
     return acumulador
+
+# lista 2 questão 26
+
+def soma_linha5_coluna3(matriz):
+    soma = 0
+
+    for i in range(len(matriz)):
+        for j in range(len(matriz[0])):
+
+            if i == 4 or j == 2:
+                soma += matriz[i][j]
+    return soma
