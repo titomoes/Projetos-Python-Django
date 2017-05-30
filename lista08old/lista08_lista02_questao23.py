@@ -13,7 +13,6 @@ from lista08.ipc import vetor
 
 
 vetorA = vetor.cria_registro_locadora(500)
-
 vetor_gratuita = vetor.quantidade_gratuita(vetorA)
 
 print(vetorA)

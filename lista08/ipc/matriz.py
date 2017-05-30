@@ -148,3 +148,12 @@ def media_diagonal_secundaria(matriz):
         j -= 1
         c += 1
     return soma / c
+
+# funcao que retorna a soma dos elementos
+
+def soma_elementos_matriz(matriz):
+    acumulador = 0
+    for i in matriz:
+        for j in i:
+            acumulador += j
+    return acumulador
