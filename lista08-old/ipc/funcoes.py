@@ -1,16 +1,15 @@
-import random
-
-    # lista 1 questão 1
-    def imprimir_questao1(n):
-        res = ""
-        c = 1
-        for i in range(n):
-            res += c * (str(i + 1) + " ") + "\n"
-            c += 1
-        return res
+import random  # lista 1 questão 1
 
 
-# lista 1 questão 2
+def imprimir_questao1(n):
+    res = ""
+    c = 1
+    for i in range(n):
+        res += c * (str(i + 1) + " ") + "\n"
+        c += 1
+    return res  # lista 1 questão 2
+
+
 def imprimir_questao2(n):
     res = ""
     c = 1
@@ -124,9 +123,9 @@ def jogar_jogo(dados, cont, pontos):
                     return pontos
         cont += 1
 
+
 # lista 1 questao 10
 def data_mes_extenso(data):
-
     data = data.split("/")
 
     if len(data) != 3:
@@ -153,17 +152,58 @@ def data_mes_extenso(data):
             "Dezembro"
         ]
 
-        mes_extenso = str(data[0]) + " de " + meses[int(data[1])-1] + " de " + data[2]
+        mes_extenso = str(data[0]) + " de " + meses[int(data[1]) - 1] + " de " + data[2]
 
     return mes_extenso
 
+
 # lista 1 questao11
 def embaralha(nome):
-    palavra=""
+    palavra = ""
     nome.lower()
-    a=list(range(0,len(nome)))
-    while a[0]==0:
+    a = list(range(0, len(nome)))
+    while a[0] == 0:
         random.shuffle(a)
     for i in a:
-        palavra+=nome[i]
+        palavra += nome[i]
     return palavra
+
+
+# usada na lista 2 questão 22
+# função para criar vetor de tamanho n
+def cria_vetor(n):
+    vetor = []
+    for j in range(n):
+        # serão inseridos valores aleatórios na matriz (entre 1 e 4)
+        value = random.rand(1, 4)
+        vetor.append(value)
+    return vetor
+
+# função que gera números decimais aleatórios entre n e n
+def gera_aleatorio_float(n, m):
+    res = float('%2.1f' % (random.random() * random.randint(n, m)))
+    return res
+
+# função para criar vetor de tamanho n
+def cria_vetor_numeros_decimais(n):
+    vetor = []
+    for j in range(n):
+        # serão inseridos valores aleatórios na matriz (entre 1 e 4)
+        value = gera_aleatorio_float(1, 4)
+        vetor.append(value)
+    return vetor
+
+# função que encontra o maior elemento em um vetor
+def maior_valor_do_vetor(vetor):
+    maior = vetor[0]
+    for i in vetor:
+        if i > maior:
+            maior = i
+    return maior
+
+# função que divide todos os elementos de um vetor por um número
+def divide_todos_por_numero(vetor, numero):
+    novo_vetor = []
+    for i in vetor:
+        novo_vetor.append("%2.3f" % (i / numero))
+    return novo_vetor

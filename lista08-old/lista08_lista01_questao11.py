@@ -4,7 +4,7 @@
 #
 # valide a data e retorne NULL caso a data seja inválida.
 
-from lista08.ipc import funcoes
+from lista08a.ipc import funcoes
 
 data = input("Informe data no formato DD/MM/AAAA: ")
 

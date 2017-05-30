@@ -5,7 +5,7 @@
 #     .....
 #     1   2   3   ...  n
 
-from lista08.ipc import funcoes
+from lista08a.ipc import funcoes
 
 qtd = int(input("Informe a quantidade: "))
 

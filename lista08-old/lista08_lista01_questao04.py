@@ -2,7 +2,7 @@
 # A função retorna o valor de caractere ‘P’, se seu argumento for positivo,
 # e ‘N’, se seu argumento for zero ou negativo.
 
-from lista08.ipc import funcoes
+from lista08a.ipc import funcoes
 
 arg = int(input("Informe o número: "))
 
