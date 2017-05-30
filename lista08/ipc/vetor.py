@@ -131,6 +131,13 @@ def vetor_diferenca(vetor1, vetor2):
     return vetor
 
 
+# lista 2 questão 16
+# função que retorna a intersecção entre dois vetores de inteiros
+
+def vetor_interseccao(vetor1, vetor2):
+    return list(set(vetor1) & set(vetor2))
+
+
 # lista 2 questão 18
 # função que retorna a soma de dois vetores de inteiros
 
