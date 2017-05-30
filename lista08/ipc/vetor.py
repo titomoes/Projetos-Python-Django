@@ -148,3 +148,14 @@ def vetor_soma(vetor1, vetor2):
         vetor.append(i + j)
 
     return vetor
+
+# lista 2 questão 19
+# função que retorna o produto de dois vetores de inteiros
+
+def vetor_produto(vetor1, vetor2):
+    vetor = []
+
+    for i, j in zip(vetor1, vetor2):
+        vetor.append(i * j)
+
+    return vetor
