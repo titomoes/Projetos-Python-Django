@@ -8,20 +8,17 @@
 # Roberta de Oliveira da Cruz   0825070169
 # Uriel Brito Barros            1515120558
 #
-# 22. Faça um procedimento que receba, por parâmetro um vetor B(50) de reais e
-# calcula o maior valor do vetor.
-#
-# A seguir, o procedimento deve dividir
-# todos os elementos de B pelo maior encontrado.
-# O vetor deve retornar alterado.
+# 17. Faça um procedimento que recebe, por parâmetro,
+# 2 vetores de 10 elementos inteiros
+# e que calcule e retorne, também por parâmetro,
+# o vetor diferença dos dois primeiros.
 
 
 from lista08.ipc import vetor
 
-vetor1 = vetor.cria_vetor_numeros_decimais(50)
+vetor1 = vetor.cria_vetor(10)
+vetor2 = vetor.cria_vetor(10)
 
-maior = vetor.maior_valor_do_vetor(vetor1)
+vetor_diferenca = vetor.vetor_diferenca(vetor1, vetor2)
 
-vetor_final = vetor.divide_todos_por_numero(vetor1, maior)
-
-print(vetor_final)
+print(vetor_diferenca)

@@ -13,6 +13,6 @@
 
 from lista08old.ipc import funcoes
 
-nome=input()
-new_palavra=funcoes.embaralha(nome)
+nome = input()
+new_palavra = funcoes.embaralha(nome)
 print(new_palavra)

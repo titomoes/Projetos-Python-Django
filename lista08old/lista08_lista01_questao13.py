@@ -8,6 +8,6 @@
 
 
 from lista08.ipc import matriz, vetor
-matriz1 = matriz.cria_matriz(1, 20)
+matriz1 = matriz.cria_matriz(4, 20)
 
 matriz.imprime_retagulo_matriz(matriz1)
