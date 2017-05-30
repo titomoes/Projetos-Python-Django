@@ -21,7 +21,8 @@ def produto_matriz(matriz1, matriz2):
     for i in range(2):
         for j in range(2):
             print("c", i, j, " = ", "a", i, 0, " - ", "b", 0, j, " - ", "a", i, 1, " - ", "b", 1, j)
-            matrizC[i][j] = matriz1[i][0] * matriz2[0][j] + matriz1[i][1] * matriz2[1][j]
+            a = matriz1[i][0] * matriz2[0][j] + matriz1[i][1] * matriz2[1][j]
+            matrizC[i][j] = a
     return matrizC
 
 
