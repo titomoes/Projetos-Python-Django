@@ -61,8 +61,8 @@ def get_as_uri_inteiros(valores):
 def cria_vetor(n):
     vetor = []
     for j in range(n):
-        # serão inseridos valores aleatórios na matriz (entre 1 e 4)
-        value = random.randint(1, 4)
+        # serão inseridos valores aleatórios na matriz
+        value = random.randint(-100, 100)
         vetor.append(value)
     return vetor
 
@@ -159,3 +159,37 @@ def vetor_produto(vetor1, vetor2):
         vetor.append(i * j)
 
     return vetor
+
+# função que verifica se um número é primo. Se for retorna True. Else: False
+
+def verifica_se_e_primo(numero):
+    divisor = numero - 1
+    primo = True
+
+    for i in range(2, numero):
+        if numero % i == 0:
+            primo = False
+
+    return primo
+
+
+# lista 2 questão 20
+
+def vetor_de_primos(vetor):
+    vetor_primos = []
+
+    for i in vetor:
+        if verifica_se_e_primo(i):
+            vetor_primos.append(i)
+
+    return list(set(vetor_primos))
+
+#lista02 questao21
+
+def vetor_compactado(vetor):
+    vetor_compactado =[]
+    for i in vetor:
+        if i > 0:
+            vetor_compactado.append(i)
+
+    return vetor_compactado
