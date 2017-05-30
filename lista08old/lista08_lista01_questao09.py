@@ -13,7 +13,7 @@
 # Você perde, no entanto, se tirar um 7 antes de tirar este Ponto novamente.
 
 
-from lista08a.ipc import funcoes
+from lista08old.ipc import funcoes
 
 cont = 0
 

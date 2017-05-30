@@ -11,7 +11,7 @@
 # independentemente de como foram digitados.
 
 
-from lista08a.ipc import funcoes
+from lista08old.ipc import funcoes
 
 nome=input()
 new_palavra=funcoes.embaralha(nome)

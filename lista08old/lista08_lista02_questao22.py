@@ -14,7 +14,7 @@
 # O vetor deve retornar alterado.
 
 
-from lista08a.ipc import funcoes
+from lista08old.ipc import funcoes
 
 vetor = funcoes.cria_vetor_numeros_decimais(50)
 

@@ -4,7 +4,7 @@
 # que é o custo de um item antes do imposto.
 # A função “altera” o valor de custo para incluir o imposto sobre vendas.
 
-from lista08a.ipc import funcoes
+from lista08old.ipc import funcoes
 
 taxa = float(input("Digite o valor da taxa de imposto"))
 preco = float(input("Digite o valor do preço"))

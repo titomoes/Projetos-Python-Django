@@ -12,7 +12,7 @@
 #
 # Inclua um loop que permita que o usuário repita esse cálculo para novos valores de entrada todas as vezes que desejar.
 
-from lista08a.ipc import funcoes
+from lista08old.ipc import funcoes
 
 while True:
 

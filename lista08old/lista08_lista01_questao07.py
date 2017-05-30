@@ -22,7 +22,7 @@
 # Quando houver atraso, cobrar 3% de multa, mais 0,1% de juros por dia de atraso.
 
 
-from lista08a.ipc import funcoes
+from lista08old.ipc import funcoes
 
 
 var = int(input("Digite um numero"))

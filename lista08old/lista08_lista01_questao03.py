@@ -1,7 +1,7 @@
 # Faça um programa, com uma função que necessite de três argumentos,
 # e que forneça a soma desses três argumentos.
 
-from lista08a.ipc import funcoes
+from lista08old.ipc import funcoes
 
 valor_1 = int(input("Informe o primeiro valor a ser somado: "))
 valor_2 = int(input("Informe o segundo valor a ser somado: "))

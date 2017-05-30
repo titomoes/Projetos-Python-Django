@@ -7,4 +7,4 @@
 # eles devem ser modificados para valores dentro da faixa de forma elegante.
 
 
-from lista08a.ipc import funcoes
+from lista08old.ipc import funcoes
