@@ -135,6 +135,7 @@ def media_diagonal_principal(matriz):
                 c += 1
     return soma / c
 
+
 # função que soma as diagonais
 
 def soma_diagonais(matriz):
@@ -153,6 +154,7 @@ def soma_diagonais(matriz):
         j -= 1
 
     return soma
+
 
 # função que retorna a média dos elementos da diagonal secundária
 
@@ -177,6 +179,7 @@ def soma_elementos_matriz(matriz):
             acumulador += j
     return acumulador
 
+
 # lista 2 questão 26
 
 def soma_linha5_coluna3(matriz):
@@ -190,3 +193,22 @@ def soma_linha5_coluna3(matriz):
     return soma
 
 
+# função que cria matriz zerada
+def cria_matriz_zerada(n, m):
+    matriz = []
+    linha = []
+    for i in range(n):
+        linha.append(0 * m)
+        matriz.append(linha)
+    return matriz
+
+
+
+
+# lista 2 questão 29
+def produto_matriz(matriz1, matriz2):
+    matriz = cria_matriz_zerada(len(matriz1), len(matriz2[0]))
+    for i in range(4):
+        for j in range(4):
+            matriz[i][j] = matriz1[i][0] * matriz2[0][j] + matriz1[i][1] * matriz2[1][j]
+    return matriz
