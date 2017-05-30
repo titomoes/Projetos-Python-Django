@@ -193,3 +193,20 @@ def vetor_compactado(vetor):
             vetor_compactado.append(i)
 
     return vetor_compactado
+
+#  lista02_Questao23 vetor que gera uma quantidade de filmes alugados para cada cliente
+def cria_registro_locadora(n):
+    vetor = []
+    for j in range(n):
+        # serão inseridos valores aleatórios na matriz
+        value = random.randint(0,50)
+        vetor.append(value)
+    return vetor
+
+
+# lista02_Questao23 vetor que retorna a quantidade de filmes gratuitos
+def quantidade_gratuita(vetor):
+    vetor1 =[]
+    for i in vetor:
+        vetor1.append(i // 15)
+    return vetor1
