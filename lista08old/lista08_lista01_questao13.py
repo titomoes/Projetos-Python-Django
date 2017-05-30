@@ -7,4 +7,7 @@
 # eles devem ser modificados para valores dentro da faixa de forma elegante.
 
 
-from lista08old.ipc import funcoes
+from lista08.ipc import matriz, vetor
+matriz1 = matriz.cria_matriz(3, 20)
+
+matriz.imprime_retagulo_matriz(matriz1)
