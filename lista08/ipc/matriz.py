@@ -188,3 +188,5 @@ def soma_linha5_coluna3(matriz):
             if i == 4 or j == 2:
                 soma += matriz[i][j]
     return soma
+
+
