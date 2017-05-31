@@ -3,7 +3,6 @@
 # que seja o produto matricial de M por N.
 
 
-
 from lista08.ipc import matriz
 
 matrizA = matriz.cria_matriz(2, 2)

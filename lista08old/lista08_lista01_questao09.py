@@ -14,23 +14,4 @@
 
 
 from lista08old.ipc import funcoes
-
-cont = 0
-
-while True:
-
-    jogar = int(input("Digite 1 para jogar dados \nDigite zero para sair: "))
-    dados = funcoes.jogar_dados()
-    print("Dados:", dados)
-
-    if jogar == 1:
-        if cont == 0:
-            pontos = funcoes.jogar_jogo(dados, cont, 0)
-            aux = pontos
-        else:
-            pontos = funcoes.jogar_jogo(dados, cont, aux)
-            aux = pontos
-
-    print("Pontos:", aux)
-
-    cont += 1
+funcoes.craps()

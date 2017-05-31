@@ -96,14 +96,24 @@ def jogar_dados():
 
 
 # lista 1 questao 9
-def jogar_jogo(dados, cont, pontos):
+def craps():
+
+    cont = True
+
     while True:
 
-        if cont == 0:
+        jogar = int(input("Digite 1 para jogar dados \nDigite zero para sair: "))
+        dados = jogar_dados()
+        print("Dados:", dados)
+
+        if cont:
 
             if (4 <= dados <= 6 or 8 <= dados <= 10):
                 pontos = dados
-                return pontos
+
+                cont = False
+
+
             elif ((dados == 7 or dados == 11) or (dados == pontos and cont > 0)):
                 print("natural. ganhou")
                 exit()
@@ -120,8 +130,7 @@ def jogar_jogo(dados, cont, pontos):
                     print("ganhou")
                     exit()
                 else:
-                    return pontos
-        cont += 1
+                    print("SEU PONTO:", pontos)
 
 
 # lista 1 questao 10
@@ -179,10 +188,12 @@ def cria_vetor(n):
         vetor.append(value)
     return vetor
 
+
 # função que gera números decimais aleatórios entre n e n
 def gera_aleatorio_float(n, m):
     res = float('%2.1f' % (random.random() * random.randint(n, m)))
     return res
+
 
 # função para criar vetor de tamanho n
 def cria_vetor_numeros_decimais(n):
@@ -193,6 +204,7 @@ def cria_vetor_numeros_decimais(n):
         vetor.append(value)
     return vetor
 
+
 # função que encontra o maior elemento em um vetor
 def maior_valor_do_vetor(vetor):
     maior = vetor[0]
@@ -200,6 +212,7 @@ def maior_valor_do_vetor(vetor):
         if i > maior:
             maior = i
     return maior
+
 
 # função que divide todos os elementos de um vetor por um número
 def divide_todos_por_numero(vetor, numero):
